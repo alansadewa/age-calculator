@@ -1,0 +1,157 @@
+@font-face {
+    font-family: poppins;
+    src: url("assets/fonts/Poppins-Regular.ttf");
+    src: url("assets/fonts/Poppins-Italic.ttf");
+    src: url("assets/fonts/Poppins-ExtraBoldItalic.ttf");
+    src: url("assets/fonts/Poppins-ExtraBold.ttf");
+    src: url("assets/fonts/Poppins-BoldItalic.ttf");
+    src: url("assets/fonts/Poppins-Bold.ttf");
+}
+
+*{
+    font-family: poppins;
+}
+
+body{
+    margin:0;
+    padding:0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 94%);
+}
+
+/* Main box */
+    
+main{
+      background-color: hsl(0, 0%, 100%);
+      box-shadow: 2px 5px 8px rgb(0, 0, 0, 0.2);
+      width: 735px;
+      padding: 40px 57px;
+      border-radius: 25px 25px 168px 25px;
+      /* position: relative; */
+}
+
+form{
+    width: 100%;
+}
+
+.input-box{
+    display: flex;
+    gap: 30px;
+}
+
+.input-box input{
+    font-size: 32px;
+    width: 120px;
+    padding:10px 20px;
+    border-radius: 5px;
+    border: 1px solid hsl(0, 0%, 86%);
+}
+
+.input-box label{
+    display: block;
+    color:hsl(0, 1%, 44%);
+}
+
+.submit{
+   display: flex;
+   align-items: center;
+}
+hr{
+    border:1px solid hsl(0, 0%, 86%);
+    width: 100%;
+    height: 0;
+}
+
+.submit input{
+    background-image:url("assets/images/icon-arrow.svg");
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+    background-color: hsl(259, 100%, 65%);
+    width:90px;
+    height:90px;
+    border-radius: 45px;
+    padding: 45px;
+    border: none;
+    box-sizing: border-box;
+}
+
+.submit input:active{
+    background-color: hsl(0, 0%, 8%);
+}
+
+span{
+    color: hsl(259, 100%, 65%);
+}
+
+.result{
+    font-size: 40px;
+    font-weight: bold;
+    margin: -8px;
+}
+
+.result h1{
+    margin: 0;
+    margin-top:-30px;
+    padding: 0;
+    font-style:italic;
+    /* font-weight:bolder; */
+}
+
+/* -------end of main */
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    position: absolute;
+    bottom: 0; 
+    right: 10px;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+/* Other */
+/* Chrome, Safari, Edge, Opera */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+/* input[type=number] {
+  -moz-appearance: textfield;
+} */
+
+
+
+/* Validation */
+.empty{
+    font-style: italic;
+    font-size: 13px;
+    color:hsl(0, 100%, 67%);
+    margin: 0;
+    display: none;
+    padding: 5px 1px;
+}
+
+/* 
+### Primary
+
+- Purple: hsl(259, 100%, 65%)
+- Light red: hsl(0, 100%, 67%)
+
+### Neutral
+
+- White: hsl(0, 0%, 100%)
+- Off white: hsl(0, 0%, 94%)
+- Light grey: hsl(0, 0%, 86%)
+- Smokey grey: hsl(0, 1%, 44%)
+- Off black: hsl(0, 0%, 8%)
+
+*/
