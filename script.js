@@ -42,7 +42,7 @@ document.getElementById("submit").onclick = function(event){
         throw new Error("Error: number of month is not valid");
     }
 
-    if(inputValue[2].value != "" && inputValue[2].value > date.getFullYear() || (inputValue[2].value == date.getFullYear() && inputValue[0].value > date.getDate() && inputValue[2].value > (date.getMonth() + 1))){
+    if(inputValue[2].value != "" && inputValue[2].value > date.getFullYear() || (inputValue[2].value == date.getFullYear() && inputValue[1].value > date.getMonth() + 1 && inputValue[0].value > date.getDate())){
         inputDiv[2].children[0].style.color = "hsl(0, 100%, 67%)";
         inputDiv[2].children[1].style.border = "1px solid hsl(0, 100%, 67%)";
         inputDiv[2].children[2].style.display = "block";
