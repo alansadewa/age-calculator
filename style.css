@@ -28,7 +28,7 @@ main{
       background-color: hsl(0, 0%, 100%);
       box-shadow: 2px 5px 8px rgb(0, 0, 0, 0.2);
       width: 735px;
-      padding: 45px 57px;
+      padding: 40px 57px;
       border-radius: 25px 25px 168px 25px;
       /* position: relative; */
 }
@@ -88,7 +88,7 @@ span{
 }
 
 .result{
-    font-size: 50px;
+    font-size: 52px;
     font-weight: bold;
     margin: -8px;
 }
